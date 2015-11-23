@@ -9,6 +9,11 @@ void setup(){
 void draw(){
   background(hedgehog);
   //adding different types of filters
-  filter(GRAY);
+  //filter(GRAY);
   //filter(THRESHOLD,.6);
+  //filter(INVERT);
+  //filter(POSTERIZE,4);
+  //filter(BLUR,6);
+  //filter(ERODE);
+  filter(DILATE);
 }
