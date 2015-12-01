@@ -1,8 +1,8 @@
 PImage mainImage;
 PImage mask;
 
-void draw() {
-  mainImage=loadImage("nyc.jpg"); 
+void setup() {
+  mainImage=loadImage("nyc.png"); 
   mask=loadImage("london.jpg");
 
   //set size after initializing images
@@ -10,12 +10,12 @@ void draw() {
 
   //mask the image
   mainImage.mask(mask);
-  
+
   //display images from center
   imageMode(CENTER);
 }
 
-void setup() {
+void draw() {
   background(0);
   image(mainImage, width/2, height/2);
 }
